@@ -8,7 +8,7 @@ int main () {
 	printf("num: ");
 	scanf("%d",&a);
 	
-    if2 (a<0) {
+    if (a<0) {
 	 printf ("must be bigger or equal to zero");
     return 0;
 	}
