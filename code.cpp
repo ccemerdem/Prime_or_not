@@ -8,17 +8,20 @@ int main () {
 	printf("num: ");
 	scanf("%d",&a);
 	
-    if (a<0) {
+    if2 (a<0) {
 	 printf ("must be bigger or equal to zero");
     return 0;
 	}
 	if (a==1 || a==0) {
 	 printf ("%d is not a prime num",a);
     }
+	if (a==2) {
+	 printf ("%d is a prime num",a);
+    }
 	
 	for(b=2;b<a;++b)
 	{  
-	 if (a%b==0 || a==2){
+	 if (a%b==0){
       printf("%d is not a prime num\n",a);
 	   break;
       }
@@ -31,12 +34,3 @@ int main () {
    getch();
     return 0;
 }
-
-
-
-
-
-
-
-
-
